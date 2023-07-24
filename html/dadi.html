@@ -31,5 +31,81 @@
         >MENU'</a
       >
     </div>
+
+    <div class="container d-sm-flex align-items-center flex-column">
+      <div id="id-input" class="col-sm-6 form-floating my-3 text-center">
+        <input
+          type="text"
+          class="form-control"
+          id="name-input"
+          placeholder="name"
+          required
+        />
+        <label for="name-input">User Name</label>
+      </div>
+      <div class="col-sm-6">
+        <a id="login-button" type="button" class="btn btn-success w-100">
+          LOGIN
+        </a>
+      </div>
+      <!-- alert lobby -->
+      <div
+        id="alert-lobby"
+        class="alert alert-secondary d-none mt-3 text-center"
+        role="alert"
+      >
+        LA PARTITA INIZIERA' A BREVE!!
+      </div>
+      <!-- alert conferma -->
+      <div
+        id="alert-victory"
+        class="alert alert-success d-none mt-3 text-center"
+        role="alert"
+      >
+        HAI VINTO!!
+      </div>
+
+      <!-- alert perso -->
+      <div
+        id="alert-game-over"
+        class="alert alert-success d-none mt-3 text-center"
+        role="alert"
+      >
+        HAI PERSO, LA PROSSIMA VOLTA SARAI + FORTUNATO!
+      </div>
+      <!-- BUTTON LANCIO DATI -->
+      <div class="col-sm-6 mt-5">
+        <a
+          id="game-button"
+          type="button"
+          class="btn btn-danger w-100 mt-5 d-none"
+        >
+          GIOCA
+        </a>
+        <div id="game" class="d-flex mt-3 d-none">
+          <div class="col-5">
+            <div class="card h-100" style="width: 15rem">
+              <img src="../IMG/npc.png" class="w-75 mx-auto" alt="..." />
+              <div class="card-body fs-2 text-center">
+                <div id="name-output"></div>
+                <p id="txt-player" class="card-text fs-4">Ti distruggo!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-5 ms-auto">
+            <div class="card" style="width: 15rem">
+              <img src="../IMG/player.png" class="w-75 mx-auto" alt="..." />
+              <div class="card-body fs-2 text-center">
+                NPC
+                <p id="txt-npc" class="card-text fs-4">
+                  Non Avrai fortuna contro di me
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
