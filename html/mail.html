@@ -26,10 +26,65 @@
   </head>
   <body>
     <!-- BUTTON MENU' -->
-    <div class="d-grid gap-2 d-flex justify-content-end">
+    <div class="d-grid gap-2 d-flex justify-content-end my-3">
       <a href="./index.html" class="btn btn-primary me-2" type="button"
         >MENU'</a
       >
+    </div>
+    <!-- <form action="" method="get"> -->
+    <div class="container d-sm-flex align-items-center flex-column">
+      <div class="col-sm-6 form-floating my-3 text-center">
+        <input
+          type="email"
+          class="form-control"
+          id="email-input"
+          placeholder="name@example.com"
+          required
+        />
+        <label for="email-input">Email address</label>
+      </div>
+      <div class="col-sm-6">
+        <a id="login-button" type="button" class="btn btn-success w-100">
+          LOGIN
+        </a>
+        <a id="danger-button" type="button" class="btn btn-danger w-100 d-none">
+          REGISTRATI
+        </a>
+      </div>
+    </div>
+    <!-- </form> -->
+
+    <!-- alert danger -->
+    <div
+      id="alert-danger-input"
+      class="alert alert-danger d-none mt-3 text-center"
+      role="alert"
+    >
+      Mi dispiace non abbiamo trovato la tua email, prova a registrarti
+    </div>
+    <!-- alert conferma -->
+    <div
+      id="alert-success-input"
+      class="alert alert-success d-none mt-3 text-center"
+      role="alert"
+    >
+      Tutto è andato a buon fine!
+    </div>
+    <!-- alert warning -->
+    <div
+      id="alert-warning-input"
+      class="alert alert-warning d-none mt-3 text-center"
+      role="alert"
+    >
+      Sembra che la tua email sia già registrata prova a riaccedere.
+    </div>
+    <!-- alert no email -->
+    <div
+      id="alert-no-email-input"
+      class="alert alert-warning d-none mt-3 text-center"
+      role="alert"
+    >
+      Non hai inserito una email, riprova.
     </div>
   </body>
 </html>
