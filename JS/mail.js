@@ -21,10 +21,8 @@ LoginButton.addEventListener("click", function () {
   console.log(Email);
 
   if (
-    Email.includes("@gmail.com") ||
-    Email.includes("@gmail.it") ||
-    Email.includes("@icloud.com") ||
-    Email.includes("@outlook.com")
+    (Email.includes("@") && Email.includes(".com")) ||
+    (Email.includes("@") && Email.includes(".it"))
   ) {
     // ciclo di controllo
     for (let i = 0; i < WhiteList.length; i++) {
